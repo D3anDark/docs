@@ -1,72 +1,72 @@
-# Roulette – A Place for Gambling
+# Ruletka - miejsce dla hazardzistów
 
-## Introduction to Roulette on our Bot
+## Wprowadzenie do ruletki na naszym bocie
 
-Welcome to the thrilling world of Roulette on StartIT! Roulette is a popular gambling game where players place
-bets on various spaces on a roulette board, hoping that luck will be on their side. In this guide, we will walk you
-through how Roulette works on our bot and provide insights on tactics to enhance your chances of winning.
+Witamy w ekscytującym świecie Ruletki na StartIT! Ruletka to popularna gra hazardowa, w której gracze obstawiają różne pola na planszy ruletki.
+zakłady na różnych polach na planszy ruletki, mając nadzieję, że szczęście będzie po ich stronie. W tym przewodniku przeprowadzimy Cię
+jak działa Ruletka na naszym bocie i przedstawimy taktyki zwiększające szanse na wygraną.
 
-## Getting Started
+## Pierwsze kroki
 
 ![](../assets/v22.png)
 
-In Roulette, the betting table consists of different spaces, each marked with numbers and colors. Players can place bets
-on a single space, multiple spaces, or even a combination of spaces. To start playing Roulette, simply use the
-`/roulette <bet> <space>` command. The bot will respond by displaying the Roulette board on the channel and placing your
-avatar on the space where you've placed your bet. The game will continue for 30 seconds, during which other players can
-also place their bets on the same table.
+W ruletce stół do obstawiania składa się z różnych pól, z których każde oznaczone jest numerami i kolorami. Gracze mogą stawiać zakłady
+na pojedyncze pole, wiele pól, a nawet kombinację pól. Aby rozpocząć grę w ruletkę, wystarczy użyć polecenia
+`/roulette <zakład> <miejsce>`. Bot zareaguje, wyświetlając planszę ruletki na kanale i umieszczając awatara gracza
+awatara na polu, na którym postawiłeś zakład. Gra będzie kontynuowana przez 30 sekund, podczas których inni gracze mogą
+również obstawiać zakłady na tym samym stole.
 
-## Types of Bets
+## Rodzaje zakładów
 
-When using the `/roulette <bet> <space>` command, you can place different types of bets by specifying a valid space
-argument (marked green in the documentation). Here are the available bet types and their corresponding payouts:
+Podczas korzystania z komendy `/roulette <zakład> <miejsce>`, można stawiać różne rodzaje zakładów poprzez podanie prawidłowego argumentu space
+(zaznaczony na zielono w dokumentacji). Oto dostępne typy zakładów i odpowiadające im wypłaty:
 
-- **Single Number Bet (Straight Bet):** Betting on a specific number. Payout: Bet amount * 36.
+- **Single Number Bet (Straight Bet):** Zakład na konkretną liczbę. Wypłata: Kwota zakładu * 36.
 
-- **Column Bet:** Betting on a vertical column of numbers on the betting table. Examples include the third column (`
-  3rd`), the second column (`2nd`), or the first column (`1st`). Payout: Bet amount * 3.
+- Zakład na kolumnę:** Obstawianie pionowej kolumny numerów na stole zakładów. Przykłady obejmują trzecią kolumnę (`
+  3rd`), druga kolumna (`2nd`) lub pierwsza kolumna (`1st`). Wypłata: Kwota zakładu * 3.
 
-- **Dozens Bet:** Betting on whether the winning number falls within the first dozen (`1-12`), second dozen (`13-24`),
-  or third dozen `25-36`). Payout: Bet amount * 3.
+- **Zakład na dziesiątki:** Zakład na to, czy zwycięski numer należy do pierwszego tuzina (`1-12`), drugiego tuzina (`13-24`) lub trzeciego tuzina (`25-36`),
+  lub trzeciego tuzina (`25-36`). Wypłata: Kwota zakładu * 3.
 
-- **Even/Odd Bet:** Betting on whether the winning number will be `even` or `odd`. Payout: Bet amount * 2.
+- Zakład na parzyste/nieparzyste:** Zakład na to, czy zwycięski numer będzie parzysty czy nieparzysty. Wypłata: Kwota zakładu * 2.
 
-- **Red/Black Bet:** Betting on whether the winning number will be `red` or `black`. Payout: Bet amount * 2.
+- Zakład Czerwony/Czarny:** Zakład na to, czy zwycięski numer będzie `czerwony` czy `czarny`. Wypłata: Kwota zakładu * 2.
 
-- **Low/High Bet:** Betting on whether the winning number will be within the range `1-18` (Low) or `19-36` (High).
-  Payout: Bet amount * 2.
+- Zakład Low/High:** Zakład na to, czy zwycięski numer będzie w przedziale `1-18` (Low) lub `19-36` (High).
+  Wypłata: Kwota zakładu * 2.
 
-Please note that Roulette is a game of chance, and no strategy guarantees consistent winnings. Play responsibly and have
-fun!
+Należy pamiętać, że ruletka jest grą losową i żadna strategia nie gwarantuje stałych wygranych. Graj odpowiedzialnie i baw się dobrze!
+baw się dobrze!
 
-## Examples of Tactics
+## Przykłady taktyk
 
-While Roulette is largely a game of chance, some strategies can help you manage your bets and potentially increase your
-odds of winning:
+Chociaż ruletka jest w dużej mierze grą losową, niektóre strategie mogą pomóc w zarządzaniu zakładami i potencjalnie zwiększyć szanse na wygraną.
+szanse na wygraną:
 
-1. **Martingale System:** This strategy involves doubling your bet after each loss. When you win, you start over with
-   your original bet. The idea is that a win will cover previous losses and yield a profit.
+1. **System Martingale:** Strategia ta polega na podwajaniu zakładu po każdej przegranej. Kiedy wygrasz, zaczynasz od nowa z
+   pierwotnego zakładu. Pomysł polega na tym, że wygrana pokryje poprzednie straty i przyniesie zysk.
 
-2. **D'Alembert System:** In this strategy, you increase your bet by one unit after a loss and decrease it by one unit
-   after a win. It aims to create a balanced betting approach.
+2. **System D'Alemberta:** W tej strategii zwiększasz swój zakład o jedną jednostkę po przegranej i zmniejszasz go o jedną jednostkę po wygranej.
+   po wygranej. Ma to na celu stworzenie zrównoważonego podejścia do zakładów.
 
-3. **Fibonacci System:** Following the Fibonacci sequence, you bet the sum of the previous two bets. If you lose, you
-   move one step forward in the sequence, and if you win, you move two steps back.
+3. **System Fibonacciego:** Zgodnie z sekwencją Fibonacciego, obstawiasz sumę dwóch poprzednich zakładów. Jeśli przegrasz
+   przesuwasz się o jeden krok do przodu w sekwencji, a jeśli wygrasz, cofasz się o dwa kroki.
 
-4. **Outside Bets:** Betting on options with almost a 50% chance of winning, such as red/black or even/odd, can provide
-   more frequent, albeit smaller, wins.
+4. **Zakłady zewnętrzne:** Obstawianie opcji z prawie 50% szansą na wygraną, takich jak czerwone/czarne lub parzyste/nieparzyste, może zapewnić częstsze, choć mniejsze wygrane.
+   częstsze, choć mniejsze wygrane.
 
-Remember that while these strategies can be fun to experiment with, Roulette remains a game of chance, and there is no
-guaranteed method to win consistently. Always play responsibly and within your limits.
+Pamiętaj, że chociaż te strategie mogą być świetną zabawą do eksperymentowania, ruletka pozostaje grą losową i nie ma gwarantowanej metody na stałą wygraną.
+gwarantowanej metody na stałą wygraną. Zawsze graj odpowiedzialnie i w granicach swoich możliwości.
 
-## Summary
+## Podsumowanie
 
-Roulette on StartIT offers an exciting and engaging experience for users looking to try their luck and enjoy
-some gambling fun. By understanding the mechanics of the game and employing various betting strategies, you can enhance
-your Roulette gameplay and potentially increase your chances of winning.
+Ruletka na StartIT oferuje ekscytujące i wciągające doświadczenie dla użytkowników, którzy chcą spróbować szczęścia i cieszyć się
+się hazardem. Rozumiejąc mechanikę gry i stosując różne strategie obstawiania, możesz poprawić
+rozgrywkę w ruletkę i potencjalnie zwiększyć swoje szanse na wygraną.
 
-So, are you ready to take a spin on the Roulette wheel? Place your bets and let the wheel decide your fate! Good luck
-and enjoy the thrill of the game!
+Czy jesteś gotowy zakręcić kołem ruletki? Obstawiaj zakłady i pozwól kołu zadecydować o Twoim losie! Powodzenia
+i ciesz się dreszczykiem emocji podczas gry!
 
-If you have any further questions or need assistance, feel free to reach out to our support or consult the documentation
-for more detailed information on Roulette and other features.
+Jeśli masz dodatkowe pytania lub potrzebujesz pomocy, skontaktuj się z naszym wsparciem lub zapoznaj się z dokumentacją
+aby uzyskać bardziej szczegółowe informacje na temat ruletki i innych funkcji.
