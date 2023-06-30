@@ -1,165 +1,165 @@
 
-# Admin: Configuring items
+# Administrator: Konfigurowanie elementów
 
-After reading the previous section, you surely already have ideas about what items you want to create. But before you
-start creating items, it is important to understand the various configuration options available to you. With some
-creativity and imagination, you can create items that are unique and tailored to your server's theme and dynamics.
-The following sections will guide you through the process of configuring items and using them to enhance your
-server's economy.
+Po przeczytaniu poprzedniej sekcji z pewnością masz już pomysły na to, jakie elementy chcesz utworzyć. Ale zanim
+zacząć tworzyć elementy, ważne jest, aby zrozumieć różne dostępne opcje konfiguracji. Przy odrobinie
+kreatywności i wyobraźni, można tworzyć elementy, które są unikalne i dostosowane do motywu i dynamiki serwera.
+Poniższe sekcje poprowadzą cię przez proces konfigurowania przedmiotów i używania ich do ulepszania ekonomii serwera.
+ekonomię serwera.
 
-## /economy backpack add Command
+## Polecenie /economy backpack add
 
-The `/economy backpack add <user> <item>` command is an administrative tool that allows authorized users to add items
-directly to a user's backpack. This command is useful for troubleshooting, rewarding users, or managing special events.
-By using this command, you can provide items to users without going through the regular acquisition process.
+Polecenie `/economy backpack add <user> <item>` jest narzędziem administracyjnym, które pozwala autoryzowanym użytkownikom na dodawanie przedmiotów
+bezpośrednio do plecaka użytkownika. Polecenie to jest przydatne do rozwiązywania problemów, nagradzania użytkowników lub zarządzania specjalnymi wydarzeniami.
+Za pomocą tego polecenia można dostarczać przedmioty użytkownikom bez przechodzenia przez zwykły proces pozyskiwania.
 
-## /economy backpack remove Command
+## /economy backpack remove Polecenie
 
-The `/economy backpack remove <user> <item>` command enables authorized users to remove items directly from a
-user's backpack. This command can be helpful in case of item duplication, removal requests, or resolving issues related
-to specific items. By using this command, you can remove items from a user's inventory when necessary.
+Polecenie `/economy backpack remove <user> <item>` umożliwia autoryzowanym użytkownikom usuwanie przedmiotów bezpośrednio z plecaka użytkownika.
+użytkownika. Polecenie to może być pomocne w przypadku duplikacji przedmiotów, próśb o usunięcie lub rozwiązywania problemów związanych z określonymi przedmiotami.
+z określonymi przedmiotami. Za pomocą tego polecenia można w razie potrzeby usunąć przedmioty z ekwipunku użytkownika.
 
-## /economy backpack clear Command
+## /economy backpack clear Polecenie
 
-The `/economy backpack clear <user>` command allows authorized users to clear a user's entire backpack, removing all
-items at once. This command can be utilized to punish users or in situations that require a user's inventory to be
-reset. By using this command, you can ensure a clean slate for a user's item collection. This command is irreversible,
-so use it with caution. It is recommended to use the `/economy backpack remove` command to remove specific items instead
-of clearing the entire backpack. This will prevent accidental removal of items and allow you to resolve issues without
-affecting the user's entire inventory.
+Polecenie `/economy backpack clear <user>` pozwala autoryzowanym użytkownikom na wyczyszczenie całego plecaka użytkownika, usuwając wszystkie
+przedmioty naraz. Komenda ta może być wykorzystana do karania użytkowników lub w sytuacjach, które wymagają zresetowania ekwipunku użytkownika.
+zresetowania. Używając tego polecenia, można zapewnić czyste konto dla kolekcji przedmiotów użytkownika. To polecenie jest nieodwracalne,
+więc należy jej używać ostrożnie. Zaleca się użycie komendy `/economy backpack remove`, aby usunąć określone przedmioty zamiast
+zamiast czyszczenia całego plecaka. Zapobiegnie to przypadkowemu usunięciu przedmiotów i pozwoli rozwiązać problemy bez
+bez wpływu na cały ekwipunek użytkownika.
 
-## Create item
+## Utwórz przedmiot
 
 ![](../assets/v1.gif)
 
-Items can be created directly from the dashboard. To create a new item, navigate to the "Items" page and click the
-plus button. You will be prompted to enter the item's name, type, and other configuration options described below.
+Przedmioty można tworzyć bezpośrednio z pulpitu nawigacyjnego. Aby utworzyć nowy przedmiot, przejdź do strony "Przedmioty" i kliknij przycisk
+plus. Zostaniesz poproszony o wprowadzenie nazwy elementu, typu i innych opcji konfiguracji opisanych poniżej.
 
-## Item display configuration
+## Konfiguracja wyświetlania elementu
 
 ![](../assets/v2.png)
 
-### Item Name
+### Nazwa elementu
 
-The item's name. This will be displayed in the shop and user inventory.
+Nazwa przedmiotu. Będzie ona wyświetlana w sklepie i ekwipunku użytkownika.
 
-### Item Type
+### Typ przedmiotu
 
-The item's type. This determines the item's behavior and effects.
+Typ przedmiotu. Określa zachowanie i efekty przedmiotu.
 
-- **Use item instantly:** This is the default item type and the simplest type of item,
-  whose only purpose is to perform some action (usually it is to give a server role).
-  You can't set it to do interesting things like give money with /collect-income because it is used instantly
-  and not saved in the backpack.
+- Jest to domyślny i najprostszy typ przedmiotu,
+  którego jedynym celem jest wykonanie jakiejś akcji (zazwyczaj jest to nadanie roli serwera).
+  Nie można ustawić go do robienia interesujących rzeczy, takich jak dawanie pieniędzy za pomocą /collect-income, ponieważ jest on używany natychmiastowo
+  i nie są zapisywane w plecaku.
 
-- **Save item in backpack:** This item type is saved in the user's backpack and can be used with the /use-item
-  command. This allows you to create items that can be used multiple times and have more complex effects.
+- **Zapisz przedmiot w plecaku:** Ten typ przedmiotu jest zapisywany w plecaku użytkownika i może być użyty z komendą /use-item
+  . Pozwala to na tworzenie przedmiotów, które mogą być używane wielokrotnie i mają bardziej złożone efekty.
 
 ### Sticky
 
-If enabled, user won't be able to return this item via /give-item or /market commands.
+Jeśli opcja ta jest włączona, użytkownik nie będzie mógł zwrócić tego przedmiotu za pomocą komend /give-item lub /market.
 
-### Automatically destroy this item:
+### Automatycznie zniszcz ten przedmiot:
 
-Sometimes you want to create items gives some boost for a limited time. This option allows you to automatically destroy
-this item after the specified time. For example, you can create an item that gives +10% to leveling for 24 hours.
+Czasami chcesz tworzyć przedmioty dające pewne wzmocnienie przez ograniczony czas. Ta opcja pozwala automatycznie zniszczyć
+ten przedmiot po upływie określonego czasu. Na przykład, możesz stworzyć przedmiot, który daje +10% do levelowania przez 24 godziny.
 
-### Limit the number of items in the backpack:
+### Ogranicz liczbę przedmiotów w plecaku:
 
-A useful feature that allows you to limit how many items one user can have.
+Przydatna funkcja, która pozwala ograniczyć liczbę przedmiotów, które może posiadać jeden użytkownik.
 
-## Shop configuration
+## Konfiguracja sklepu
 
-When creating an item, you have the option to add it to the shop. The shop is where users can browse and purchase items
-using virtual currency. Below are the configuration options for items in the shop.
+Podczas tworzenia przedmiotu istnieje możliwość dodania go do sklepu. Sklep jest miejscem, w którym użytkownicy mogą przeglądać i kupować przedmioty
+za pomocą wirtualnej waluty. Poniżej znajdują się opcje konfiguracji przedmiotów w sklepie.
 
-- **Display item in store:** Enable this checkbox to make the item available for purchase in the shop.
+- **Wyświetl przedmiot w sklepie:** Włącz to pole wyboru, aby udostępnić przedmiot do zakupu w sklepie.
 
-If the item is displayed in the shop, the following options will be shown:
+Jeśli przedmiot zostanie wyświetlony w sklepie, pojawią się następujące opcje:
 
 ![](../assets/v3.png)
 
-### Item Description
+### Opis przedmiotu
 
-Enter a description for the item that will be displayed in the shop. Provide information about its effects or any
-special features.
+Wprowadź opis przedmiotu, który będzie wyświetlany w sklepie. Podaj informacje o jego efektach lub
+specjalnych cechach.
 
-### Item Price
+### Cena przedmiotu
 
-Set the price of the item in the shop.
+Ustaw cenę przedmiotu w sklepie.
 
-### Item Price for Individual Roles
+### Cena przedmiotu dla poszczególnych ról
 
-If you want to offer different prices for specific roles, you can set the price for each role using this option. This
-allows you to create role-specific discounts or promotions.
+Jeśli chcesz zaoferować różne ceny dla określonych ról, możesz ustawić cenę dla każdej roli za pomocą tej opcji. To
+Pozwala to na tworzenie zniżek lub promocji dla poszczególnych ról.
 
-### Limit the number of items in the stock
+### Ogranicz liczbę artykułów w magazynie
 
-If you want to restrict the availability of the item, you can set a limit on the number of items that can be purchased
-from the shop.
+Jeśli chcesz ograniczyć dostępność produktu, możesz ustawić limit liczby produktów, które można kupić w sklepie.
+w sklepie.
 
-### Item Category
+### Kategoria artykułu
 
-Assign a category to the item to help organize your store. Users can browse items by category, making it easier to find
-what they are looking for.
+Przypisz kategorię do przedmiotu, aby uporządkować swój sklep. Użytkownicy mogą przeglądać przedmioty według kategorii, co ułatwia znalezienie
+łatwiej znaleźć to, czego szukają.
 
 ![](../assets/v4.png)
 
-### Item Owner
+### Właściciel przedmiotu
 
-If you want the income from this item to be distributed among multiple owners, you can select the roles or individual
-users who will be considered as owners. The income will be evenly distributed among the selected owners.
+Jeśli chcesz, aby dochód z tej pozycji był rozdzielany między wielu właścicieli, możesz wybrać role lub indywidualnych użytkowników, którzy będą uważani za właścicieli.
+użytkowników, którzy będą uważani za właścicieli. Dochód zostanie równomiernie rozdzielony pomiędzy wybranych właścicieli.
 
-### Requirements to Purchase an Item
+### Wymagania dotyczące zakupu przedmiotu
 
-If you want to set specific requirements for users to be able to purchase the item, you can select the roles or
-individual users who must meet those requirements. Users who do not meet the requirements will not be able to buy the
-item.
+Jeśli chcesz ustawić określone wymagania dla użytkowników, aby mogli zakupić przedmiot, możesz wybrać role lub poszczególnych użytkowników, którzy
+indywidualnych użytkowników, którzy muszą spełnić te wymagania. Użytkownicy, którzy nie spełnią tych wymagań, nie będą mogli kupić przedmiotu.
+elementu.
 
-### Fraud Chance
+### Szansa na oszustwo
 
-Specify a percentage chance that the item will not be delivered to the user after purchase. This adds an element of risk
-to the purchase and can create an element of surprise for users.
+Określ procentową szansę, że przedmiot nie zostanie dostarczony użytkownikowi po zakupie. Dodaje to element ryzyka
+do zakupu i może stworzyć element zaskoczenia dla użytkowników.
 
-## Configure /use-item behavior
+## Konfiguracja zachowania /use-item
 
-This part of configuration lets you set up bot behavior after using an item with the `/use-item` command.
+Ta część konfiguracji pozwala skonfigurować zachowanie bota po użyciu przedmiotu za pomocą polecenia `/use-item`.
 
 ![](../assets/v5.png)
 
-### Destroy the item after using it
+### Zniszcz przedmiot po jego użyciu
 
-If enabled, the item will be removed from the user's backpack after it is used.
+Jeśli włączone, przedmiot zostanie usunięty z plecaka użytkownika po jego użyciu.
 
-### Add Temporary Roles
+### Dodawanie tymczasowych ról
 
-You can select roles to be added temporarily to the user after using the item. These roles will be automatically removed
-after a certain period of time.
+Możesz wybrać role, które zostaną tymczasowo dodane do użytkownika po użyciu przedmiotu. Role te zostaną automatycznie usunięte
+po upływie określonego czasu.
 
-### Add Roles
+### Dodaj role
 
-Select roles to be added to the user after using the item. These roles will persist until manually removed.
+Można wybrać role, które zostaną dodane do użytkownika po użyciu elementu. Role te będą obowiązywać do momentu ich ręcznego usunięcia.
 
-### Remove Roles
+### Usuń role
 
-Select roles to be removed from the user after using the item. These roles will no longer be associated
-with the user.
+Wybierz role, które mają zostać usunięte z użytkownika po użyciu elementu. Role te nie będą już powiązane
+z użytkownikiem.
 
-### Add Money
+### Dodaj pieniądze
 
-Specify an amount of virtual currency to be added to the user's balance after using the item.
+Określ kwotę wirtualnej waluty, która zostanie dodana do salda użytkownika po użyciu przedmiotu.
 
-### Add XP
+### Dodaj XP
 
-If you are using XP system from our bot, you can specify an amount of XP to be added to the user's experience
-points after using the item.
+Jeśli korzystasz z systemu XP naszego bota, możesz określić ilość punktów XP, które zostaną dodane do doświadczenia użytkownika po użyciu przedmiotu.
+po użyciu przedmiotu.
 
-### Remove All User Warnings
+### Usuń wszystkie ostrzeżenia użytkownika
 
-Enable this option to remove all warnings associated with the user. This can be useful for
-providing a clean slate or resetting certain user attributes.
+Włącz tę opcję, aby usunąć wszystkie ostrzeżenia powiązane z użytkownikiem. Może to być przydatne do
+może być przydatna do zapewnienia czystego konta lub zresetowania niektórych atrybutów użytkownika.
 
-### Custom Message After Using This Item
+### Niestandardowa wiadomość po użyciu tego elementu
 
-Enter a custom message that will be displayed to the user after they use the
-item. You can provide additional instructions or information related to the item's effects.
+Wprowadź niestandardową wiadomość, która zostanie wyświetlona użytkownikowi po użyciu elementu.
+elementu. Możesz podać dodatkowe instrukcje lub informacje związane z działaniem elementu.
