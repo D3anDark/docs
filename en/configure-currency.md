@@ -1,67 +1,67 @@
 
-# Configuring currency
+# Konfigurowanie waluty
 
 ![](../assets/v19.gif)
 
-You can manage each user individually by using the commands listed below. These commands allow you to adjust the
-currency balance of a specific user, which can be useful for administrative purposes or to reward users for their
-contributions to the server.
+Każdym użytkownikiem można zarządzać indywidualnie za pomocą poleceń wymienionych poniżej. Polecenia te umożliwiają dostosowanie
+saldo walutowe określonego użytkownika, co może być przydatne do celów administracyjnych lub do nagradzania użytkowników za ich
+użytkowników za ich wkład w serwer.
 
-## /economy add <user> <money> [location]
+## /economy add <użytkownik> <ilość pieniędzy> [lokacja przelania]
 
-The `/economy add` command is an administrative command that allows authorized users to add virtual money to a specific
-user's account. By mentioning or providing the ID of the target user and specifying the amount to be added,
-administrators can adjust user balances accordingly. An optional `location` argument can be provided to specify whether
-the money should be added to the bank or wallet. Defaults to bank.
+Komenda `/economy add` jest komendą administracyjną, która pozwala autoryzowanym użytkownikom na dodawanie wirtualnych pieniędzy do konta określonego użytkownika.
+konto użytkownika. Wspominając lub podając identyfikator docelowego użytkownika i określając kwotę, która ma zostać dodana,
+administratorzy mogą odpowiednio dostosować salda użytkowników. Opcjonalny argument `lokalizacja przelania` może być dostarczony w celu określenia, czy
+pieniądze powinny zostać dodane do banku lub portfela. Domyślnie do banku.
 
-## /economy remove <user> <money> [location]
+## /economy remove <użytkownik> <ilość pieniędzy> [lokalizacja przelania]
 
-The `/economy remove` command enables authorized users to deduct virtual money from a specific user's account. By
-mentioning or providing the ID of the target user and specifying the amount to be removed, administrators can adjust
-user balances accordingly. An optional `location` argument can be provided to specify whether the money should be
-deducted from the bank or wallet. Defaults to bank.
+Komenda `/economy remove` umożliwia autoryzowanym użytkownikom odejmowanie wirtualnych pieniędzy z konta konkretnego użytkownika. Poprzez
+lub podając identyfikator docelowego użytkownika i określając kwotę do usunięcia, administratorzy mogą odpowiednio dostosować
+odpowiednio dostosować salda użytkowników. Opcjonalny argument `lokalizacja przelania` może być podany w celu określenia, czy pieniądze powinny być
+potrącane z banku lub portfela. Domyślnie z banku.
 
-## /economy set <user> <money> [location]
+## /economy set <użytkownik> <ilość pieniędzy> [lokalizacja przelania]
 
-The `/economy set` command allows authorized users to set a specific amount of virtual money for a user's account. By
-mentioning or providing the ID of the target user and specifying the desired balance, administrators can directly modify
-user balances. An optional `location` argument can be provided to specify whether the money should be set in the bank or
-wallet. Defaults to bank.
+Komenda `/economy set` pozwala autoryzowanym użytkownikom na ustawienie określonej kwoty wirtualnych pieniędzy dla konta użytkownika. Poprzez
+podając identyfikator docelowego użytkownika i określając żądane saldo, administratorzy mogą bezpośrednio modyfikować salda użytkowników.
+mogą bezpośrednio modyfikować salda użytkowników. Opcjonalny argument `lokalizacja przelania` może być podany w celu określenia, czy pieniądze 
+powinny być ustawione w banku lub portfelu. Domyślnie w banku.
 
-## Server settings
+## Ustawienia serwera
 
 ![](../assets/v9.png)
 
-### Currency symbol
+### Symbol waluty
 
-The currency symbol is a visual representation of the virtual currency used in the bot's economy system. It is displayed
-in various commands and messages to provide users with a clear indication of the currency being used. The default
-currency symbol is `$`, but you can change it to any emoji of your choice.
+Symbol waluty jest wizualną reprezentacją wirtualnej waluty używanej w systemie ekonomicznym bota. Jest on wyświetlany
+w różnych poleceniach i komunikatach, aby zapewnić użytkownikom wyraźne wskazanie używanej waluty. Domyślnym
+symbol waluty to `$`, ale można go zmienić na dowolny wybrany emoji.
 
-### Initial amount of money
+### Początkowa kwota pieniędzy
 
-The initial amount of money is the amount of virtual currency that users will receive when they first join the server.
-This provides users with a starting point to engage in the economy system and earn more money through various commands
-and activities.
+Początkowa kwota pieniędzy to ilość wirtualnej waluty, którą użytkownicy otrzymają po pierwszym dołączeniu do serwera.
+Zapewnia to użytkownikom punkt wyjścia do zaangażowania się w system ekonomiczny i zarabiania większej ilości pieniędzy za pomocą różnych poleceń i działań.
+i działania.
 
-Note that this setting only applies to new users who join the <server after the setting has been changed. Existing users
-will not receive the initial amount of money. However, you can use the `/economy add` command to manually add money to
-existing users' accounts.
+Należy pamiętać, że to ustawienie dotyczy tylko nowych użytkowników, którzy dołączają do <serwera po zmianie ustawienia. Istniejący użytkownicy
+nie otrzymają początkowej kwoty pieniędzy. Można jednak użyć polecenia `/economy add`, aby ręcznie dodać pieniądze do kont istniejących użytkowników.
+istniejących kont użytkowników.
 
-### Reset user's money after they leave the server
+### Resetowanie pieniędzy użytkownika po opuszczeniu serwera
 
-This setting determines whether users' virtual money will be reset when they leave the server. If this setting is
-enabled, users will lose all their virtual money when they leave the server. This can be useful for discouraging users
-from leaving the server, as they will lose all their progress in the economy system.
+To ustawienie określa, czy wirtualne pieniądze użytkowników będą resetowane po opuszczeniu serwera. Jeśli to ustawienie jest
+włączone, użytkownicy stracą wszystkie swoje wirtualne pieniądze po opuszczeniu serwera. Może to być przydatne do zniechęcania użytkowników.
+do opuszczenia serwera, ponieważ stracą oni wszystkie swoje postępy w systemie ekonomicznym.
 
-### Digit group separator
+### Separator grup cyfr
 
-The digit group separator is a visual separator that is used to separate digits into groups of three. This provides a
-clearer representation of large numbers and makes it easier for users to read and understand the amount of money they
-have.
+Separator grup cyfr to wizualny separator, który służy do rozdzielania cyfr na grupy po trzy. Zapewnia to
+bardziej przejrzystą reprezentację dużych liczb i ułatwia użytkownikom odczytanie i zrozumienie kwoty pieniędzy, którą
+pieniędzy.
 
-### Currency position
+### Pozycja walutowa
 
-The currency position determines where the currency symbol is displayed in messages. The default setting is `on the
-right`, which means that the currency symbol will be displayed after the amount of money. You can also change the
-setting to `on the left`, which will display the currency symbol before the amount of money.
+Pozycja waluty określa miejsce wyświetlania symbolu waluty w wiadomościach. Domyślnym ustawieniem jest `po
+po prawej stronie`, co oznacza, że symbol waluty będzie wyświetlany po kwocie pieniędzy. Można również zmienić
+na `po lewej`, co spowoduje wyświetlanie symbolu waluty przed kwotą pieniędzy.
